@@ -6,6 +6,7 @@ import Termscond from './Termscond'
 import Guide from './Guide'
 import Feedback from './Feedback'
 import Footer from './Footer'
+import Landfooter from './Landfooter'
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Guide />
       <Feedback />
       <Footer />
+      <Landfooter />
       
     </div>
   )

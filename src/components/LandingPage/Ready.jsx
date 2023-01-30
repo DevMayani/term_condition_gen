@@ -1,5 +1,6 @@
 import React from 'react'
 import Imagepage from '../../images/pagenew.png';
+import { Link } from 'react-router-dom';
 
 const Ready = () => {
   return (
@@ -14,7 +15,7 @@ const Ready = () => {
              businesses, Large scale businesses, Products and services, 
              Capturing your business legal terms of service at a glance.
           </p>
-          <button className='border px-10 py-3 mb-4 rounded-xl text-white font-semibold mt-5 text-lg bg-red-500  md:mt-10 text-xl'>Get Started</button>
+          <Link to='/signup'><button className='border px-10 py-3 mb-4 rounded-xl text-white font-semibold mt-5 text-lg bg-red-500  md:mt-10 text-xl'>Get Started</button></Link>
           </div>
             </div>
             <div>
