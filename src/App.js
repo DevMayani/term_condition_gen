@@ -4,7 +4,8 @@ import Home from "./components/LandingPage/Home";
 import Signin from './components/Signin/Signin'
 import Contact from './components/Contact/Contact'
 import About  from './components/About/About'
-import Createnew from "./components/Newacc/Createnew";
+
+import Signup from "./components/Signup/Signup";
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/signin" element={<Signin />} />
-      <Route path="/createnew" element={<Createnew />} />
+      <Route path="/signup" element={<Signup />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
     </Routes>

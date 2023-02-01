@@ -31,7 +31,7 @@ return (
         <Link to='/signin'>
           <button className='bg-transparent text-green-800 px-3 py-3 mb-4 text-xl'>Login</button>
           </Link>
-          <Link to='/createnew'>
+          <Link to='/signup'>
           <button className='border  bg-green-800 px-5 py-2 mb-4 rounded-xl text-white text-xl'>Sign up</button>
           </Link>
         </div>
@@ -51,7 +51,7 @@ return (
       <Link to='/signin'>
       <button className='border bg-transparent rounded-xl  text-green-800 px-8 py-3 mb-4 text-xl'>Login</button>
       </Link>
-      <Link to='/createnew'>
+      <Link to='/signup'>
           <button className='border  bg-green-800 px-5 py-2 mb-4 rounded-xl text-white text-xl'>Sign up</button>
       </Link>
       </div>

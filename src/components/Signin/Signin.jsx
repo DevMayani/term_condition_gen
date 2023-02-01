@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Images from '../../images/logoimgone.png';
 import Signimage from '../../images/sign.png';
 import Facebook from '../../images/Capaf.png';
@@ -9,50 +9,49 @@ import Gog from '../../images/gogg.png';
 import { Link } from "react-router-dom";
 
 const Signin = () => {
+  const initialValues = { username: "", email: "", password: "" };
+  const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
-  const [item, setItem] = useState([]);
-  const [details,setDetails] = useState([{
-   username: "",
-   email: "",
-   password: "",
-  }])
+  const [isSubmit, setIsSubmit] = useState(false);
+
   const handleChange = (e) => {
-    setDetails({ ...details, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (
-      
-      details.username === "" ||
-      details.email === "" ||
-      details.password === ""
-    ) {
-      setFormErrors(validate(details));
-    } else {
-      item.push(details);
-      setItem([...item]);
-      setDetails({
-        username: "",
-        email: "",
-        password: "",
-      });
-      setFormErrors({});
-    }
+    setFormErrors(validate(formValues));
+    setIsSubmit(true);
   };
+
+  useEffect(() => {
+    console.log(formErrors);
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      console.log(formValues);
+    }
+  }, [formErrors]);
   const validate = (values) => {
     const errors = {};
-   
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     if (!values.username) {
-      errors.username = "username name is required!";
+      errors.username = "Username is required!";
     }
     if (!values.email) {
-      errors.email = "email is required!";
+      errors.email = "Email is required!";
+    } else if (!regex.test(values.email)) {
+      errors.email = "This is not a valid email format!";
     }
     if (!values.password) {
-      errors.password = "password is required!";
+      errors.password = "Password is required";
+    } else if (values.password.length < 4) {
+      errors.password = "Password must be more than 4 characters";
+    } else if (values.password.length > 10) {
+      errors.password = "Password cannot exceed more than 10 characters";
     }
     return errors;
   };
+
 
   return (
     <div className='grid md:grid-cols-2 p-10'>
@@ -69,19 +68,24 @@ const Signin = () => {
           <p className='text-xl font-semibold text-green-900'>Log in</p>
         </div>
 
-        <div className='w-[100%] flex justify-around items-center border border-green-900 outline-none rounded-xl mt-5 m-auto h-10 md:w-[50%] '>
+        <div className='w-[100%] flex justify-center gap-x-5 items-center border border-green-900 outline-none rounded-xl mt-5 m-auto h-10 md:w-[50%] '>
           <p className='text-sm'>Log in with goggle</p>
-          <img src={Gog} alt="pic" className='w-5' />
+          <img src={Gog} alt="pic" className='w-3' />
         </div>
         <center className='flex justify-center gap-x-5 items-center mt-5'>
         <hr className='w-5 border-b border-slate-600  md:w-10'/>
-        <p className='text-sm text-blue-600'>log in with your email</p>
+        <p className='text-sm text-blue-600 cursor-pointer'>log in with your email</p>
         <hr className='w-5 border-b border-slate-600 md:w-10' />
         </center>
         <form onSubmit={handleSubmit} className='mt-10'>
           <p className='text-xl m-auto  w-[100%]  md:w-[50%]'>Username:</p>
           <div className='flex justify-center items-center mt-2   '>
-            <input name='username'onChange={handleChange} type="text" placeholder='Enter Firstname' className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
+            <input name='username'
+            onChange={handleChange}
+             type="text"
+              placeholder='Enter Firstname' 
+              value={formValues.username}
+              className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
           </div>
           <center>
           <p className="text-red-500">{formErrors.username}</p>
@@ -89,27 +93,38 @@ const Signin = () => {
   
           <p className='text-xl m-auto  w-[100%] mt-5  md:w-[50%]'>Email Address:</p>
           <div className='flex justify-center items-center mt-2  '>
-            <input name='email'onChange={handleChange} type="text" placeholder='Enter Email Address' className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
+            <input name='email'
+            onChange={handleChange}
+             type="text"
+             value={formValues.email}
+             placeholder='Enter Email Address'
+              className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
           </div>
           <center>
           <p className="text-red-500">{formErrors.email}</p>
           </center>
+
           <p className='text-xl m-auto  w-[100%] mt-5  md:w-[50%]'>Password:</p>
           <div className='flex justify-center items-center mt-2  '>
-            <input name='password'onChange={handleChange} type="text" placeholder='Enter Password' className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
+            <input name='password'
+            onChange={handleChange}
+             type="text"
+             value={formValues.password}
+             placeholder='Enter Password'
+             className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
           </div>
           <center>
           <p className="text-red-500">{formErrors.password}</p>
           </center>
           <div className='mt-5  m-auto w-[100%] md:w-[50%] '>
-            <p className='text-sm text-blue-700'>Forgot password?</p>
+            <p className='text-sm text-blue-700 cursor-pointer'>Forgot password?</p>
           </div>
           <center className='mt-5'>
             <button type='submit' className='px-8 py-2 mb-4 border bg-green-900 w-[100%] rounded-2xl text-white text-xl md:w-[50%]'>Login</button>
           </center>
           <center className='flex justify-center items-center gap-x-3'>
             <p className='text-blue-700 text-sm'>Don't have an account?</p>
-            <p className='text-red-500 text-sm'>Sign up</p>
+            <Link to='/signup'><p className='text-red-500 text-sm'>Sign up</p></Link>
           </center>
           <center className='flex justify-center items-center gap-x-3 mt-5'>
             <hr className='w-3 border-b border-slate-600'/>
