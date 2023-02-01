@@ -117,7 +117,7 @@ const Signin = () => {
           <p className="text-red-500">{formErrors.password}</p>
           </center>
           <div className='mt-5  m-auto w-[100%] md:w-[50%] '>
-            <p className='text-sm text-blue-700 cursor-pointer'>Forgot password?</p>
+            <Link to='/reset'><p className='text-sm text-blue-700 cursor-pointer'>Forgot password?</p></Link>
           </div>
           <center className='mt-5'>
             <button type='submit' className='px-8 py-2 mb-4 border bg-green-900 w-[100%] rounded-2xl text-white text-xl md:w-[50%]'>Login</button>
