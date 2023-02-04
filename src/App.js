@@ -4,9 +4,9 @@ import Home from "./components/LandingPage/Home";
 import Signin from './components/Signin/Signin'
 import Contact from './components/Contact/Contact'
 import About  from './components/About/About'
-
 import Signup from "./components/Signup/Signup";
 import Reset from "./components/Resetpass/Reset";
+
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
       <Route path="/reset" element={<Reset />} />
+     
     </Routes>
   );
 }
