@@ -64,7 +64,7 @@ const About = () => {
           <div className='mt-2'>
           <img src={Eye} alt="pic" className='w-5 m-auto ' />
           <center className='mt-2'>
-          <p>Basic Privacy <br /> Policy</p>
+          <p className='font-semibold'>Basic Privacy <br /> Policy</p>
           </center>
             <img src={Send} alt="pic" className='w-5 mt-3 m-auto' />
           </div>
@@ -74,7 +74,7 @@ const About = () => {
           <div className='mt-2'>
           <img src={Receipt} alt="pic" className='w-5 m-auto ' />
           <center className='mt-2'>
-          <p>Terms and <br /> Conditions</p>
+          <p className='font-semibold'>Terms and <br /> Conditions</p>
           </center>
           <img src={Send} alt="pic" className='w-5 mt-3 m-auto' />
           </div>
@@ -84,7 +84,7 @@ const About = () => {
           <div className='mt-2'>
           <img src={Discount} alt="pic" className='w-5 m-auto ' />
           <center className='mt-2 md:mt-5'>
-          <p>Cookies Policy</p>
+          <p className='font-semibold'>Cookies Policy</p>
           </center>
           <img src={Send} alt="pic" className='w-5 mt-3 m-auto md:mt-5' />
           </div>

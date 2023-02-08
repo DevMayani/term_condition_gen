@@ -6,6 +6,8 @@ import Contact from './components/Contact/Contact'
 import About  from './components/About/About'
 import Signup from "./components/Signup/Signup";
 import Reset from "./components/Resetpass/Reset";
+import Dashboard from "./components/Dashboard/Dashboard";
+import Dashhome from "./components/Dashboard/Dashhome";
 
 
 
@@ -18,6 +20,9 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
       <Route path="/reset" element={<Reset />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/dashhome" element={<Dashhome />} />
+      
      
     </Routes>
   );

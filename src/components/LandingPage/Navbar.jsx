@@ -17,19 +17,19 @@ return (
   <div className='w-screen h-[80px] drop-shadow-lg md:h-[100px]'>
     <div className=' flex justify-between items-center '>
         <div className='flex justify-start items-center  w-[100px] md:w-[200px]'>
-          <img src={Images} alt="pic" className=' w-[400px]' />
+        <img src={Images} alt="pic" className=' w-[400px]' />
           </div>
           <div  >
           <ul className='hidden md:flex justify-around gap-x-10 '>
-            <Link to='/about'><li className='text-xl'>About</li></Link>
-            <Link to='/'><li className='text-xl'>Template</li></Link>
-            <Link to='/contact'><li className='text-xl'>Contact Us</li></Link>
+          <Link to='/'><li className='text-xl hover:text-green-600'>Home</li></Link>
+            <Link to='/about'><li className='text-xl hover:text-green-600'>About</li></Link>
+            <Link to='/contact'><li className='text-xl hover:text-green-600'>Contact Us</li></Link>
           </ul>
           </div>
         
         <div className='hidden gap-x-3 md:flex items-center mt-4 mr-10 '>
         <Link to='/signin'>
-          <button className='bg-transparent text-green-800 px-3 py-3 mb-4 text-xl'>Login</button>
+          <button className='bg-transparent text-green-800 px-3 py-3 mb-4 text-xl hover:text-green-600'>Login</button>
           </Link>
           <Link to='/signup'>
           <button className='border  bg-green-800 px-5 py-2 mb-4 rounded-xl text-white text-xl'>Sign up</button>
@@ -43,16 +43,16 @@ return (
       </div>
 
     <ul className={!nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-8'}>
-        <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="/about" smooth={true} duration={500}>About</Link></li>
-        <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="" smooth={true} offset={-200} duration={500}>Template</Link></li>
-        <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="" smooth={true} offset={-50} duration={500}>Contact Us</Link></li>
+    <li className='border-b-2 border-zinc-300 w-full hover:text-green-600'><Link onClick={handleClose} to="/" smooth={true} duration={500}>Home</Link></li>
+        <li className='border-b-2 border-zinc-300 w-full hover:text-green-600'><Link onClick={handleClose} to="/about" smooth={true} duration={500}>About</Link></li>
+        <li className='border-b-2 border-zinc-300 w-full hover:text-green-600'><Link onClick={handleClose} to="" smooth={true} offset={-50} duration={500}>Contact Us</Link></li>
 
-      <div className='flex flex-col my-4'>
+      <div className='flex flex-col my-2'>
       <Link to='/signin'>
-      <button className='border bg-transparent rounded-xl  text-green-800 px-8 py-3 mb-4 text-xl'>Login</button>
+      <button className='border border-green-900 rounded-xl  text-green-800 px-8 py-1 mb-2 text-xl hover:text-green-600'>Login</button>
       </Link>
       <Link to='/signup'>
-          <button className='border  bg-green-800 px-5 py-2 mb-4 rounded-xl text-white text-xl'>Sign up</button>
+          <button className='border  bg-green-800 px-8 py-1 mb-2 rounded-xl text-white text-xl'>Sign up</button>
       </Link>
       </div>
     </ul>

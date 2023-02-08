@@ -55,15 +55,15 @@ const Signin = () => {
 
   return (
     <div className='grid md:grid-cols-2 p-10'>
-      <div className='h-[70vh]'>
+      <div className='max-h-[70vh]'>
         <div>
         <img src={Images} alt="pic" className='w-[50%]' />
         </div>
-        <div>
+        <div className=''>
         <img src={Signimage} alt="pic" className='w-[100%] md:w-[80%]' />
         </div>
       </div>
-      <div className=''>
+      <div className='mt-10'>
         <div className='flex justify-center items-center mt-15'>
           <p className='text-xl font-semibold text-green-900'>Log in</p>
         </div>
@@ -120,7 +120,7 @@ const Signin = () => {
             <Link to='/reset'><p className='text-sm text-blue-700 cursor-pointer'>Forgot password?</p></Link>
           </div>
           <center className='mt-5'>
-            <button type='submit' className='px-8 py-2 mb-4 border bg-green-900 w-[100%] rounded-2xl text-white text-xl md:w-[50%]'>Login</button>
+            <Link to='/dashhome'><button type='submit' className='px-8 py-2 mb-4 border bg-green-900 w-[100%] rounded-2xl text-white text-xl md:w-[50%]'>Login</button></Link>
           </center>
           <center className='flex justify-center items-center gap-x-3'>
             <p className='text-blue-700 text-sm'>Don't have an account?</p>

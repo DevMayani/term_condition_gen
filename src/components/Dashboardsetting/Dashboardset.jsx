@@ -1,9 +1,10 @@
 import React from 'react'
+import Dashboard from './Dashboard'
 
 const Dashboardset = () => {
   return (
     <div>
-      dashboardset
+      <Dashboard />
     </div>
   )
 }
