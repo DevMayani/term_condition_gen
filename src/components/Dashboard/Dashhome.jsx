@@ -12,7 +12,7 @@ const Dashhome = () => {
       <div>
       <Dashboard />
       </div>
-      <div className='flex justify-start items-start w-screen'>
+      <div className='flex justify-start items-start '>
        <Sidebars />
       <Main />
       </div>

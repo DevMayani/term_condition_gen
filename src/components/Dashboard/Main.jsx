@@ -9,9 +9,9 @@ const Main = () => {
  
   return (
     <div className=' w-[100%] h-full overflow-hidden'>
-      <center className='flex justify-center items-center gap-x-5 mt-5'>
-      <p className='font-bold text-green-900'>{time}</p>
-      <p className='font-bold text-green-900'>{date}</p>
+      <center className='flex justify-center items-center gap-x-2  mt-5 md:gap-x-5'>
+      <p className='text-xs font-bold text-green-900 md:text-xl'>{time}</p>
+      <p className='text-xs font-bold text-green-900 md:text-xl'>{date}</p>
       </center>
       <div className='p-10'>
 

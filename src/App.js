@@ -8,6 +8,7 @@ import Signup from "./components/Signup/Signup";
 import Reset from "./components/Resetpass/Reset";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Dashhome from "./components/Dashboard/Dashhome";
+import Dashboardset from "./components/Dashboardsetting/Dashboardset";
 
 
 
@@ -22,6 +23,8 @@ function App() {
       <Route path="/reset" element={<Reset />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/dashhome" element={<Dashhome />} />
+      <Route path="/dashboardset" element={<Dashboardset />} />
+    
       
      
     </Routes>
