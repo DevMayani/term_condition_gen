@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Images from '../../images/logoimgone.png';
 import Search from '../../images/Vectornew.png';
@@ -6,10 +5,13 @@ import Clientimage from '../../images/clientimage.png';
 import Group from '../../images/Group.png';
 import { Link } from 'react-router-dom';
 
+ 
 
-const Privacypolicygen = () => {
+
+const TandCgenpage = () => {
+
   const name = 'MOYOSORE'
-  const text = 'Generate a Privacy Policy for your business with the Privacy Policy Generator from Terma.'
+  const text = 'Generate a Terms & Conditions agreement for your business with the Terms & Conditions Generator from Terma.'
   return (
     <div className=''>
       <div className='border border-bg-black  w-[100%]   '>
@@ -29,19 +31,31 @@ const Privacypolicygen = () => {
      </div>
      </div>
      <center className='mt-20'>
-      <p className='w-[100%] text-xl text-green-900 font-bold md:w-[40%] text-2xl'>Privacy Policy Generator</p>
+      <p className='w-[100%] text-xl text-green-900 font-bold md:w-[40%] text-2xl'>Terms & Conditions Generator</p>
       <p className='w-[100%] text-sm text-green-900 font-bold mt-10  md:w-[30%] text-xl '>{text}</p>
      </center>
 
-     <Link to='/modaloneprivacy'>
+     <Link to='/modalpageone'>
       <center className='mt-20'>
      <button type='submit'
       className='px-8 py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white text-xl '
-      >Generate Privacy policy</button>
+      >Generate T & C</button>
      </center>
      </Link>
+
+     
+
+     
+
+
+
+
+
+
+
+
     </div>
   )
 }
 
-export default Privacypolicygen
+export default TandCgenpage

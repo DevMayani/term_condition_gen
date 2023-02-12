@@ -15,20 +15,23 @@ const Sidebars = () => {
   
   return (
     <div className='w-[50%] h-screen cursor-pointer md:w-[20%] border border-bg-900 '>
-      <div className='flex justify-center items-center w-full mt-5 hover:bg-green-900 text-white  md:gap-x-3  '>
+          <Link to='/tandCgenpage'>
+          <div className='flex justify-center items-center w-full mt-5 hover:bg-green-900 text-white  md:gap-x-3  '>
           <img src={Element} alt="pic" className=' w-5 md:w-8  ' />
           <div className=' w-20 font-bold text-green-900 hover:text-white'>
           <p className=' '>Dashboard</p>
           </div>
-          
           </div>
+          </Link>
+          <Link to='/privacypolicygen'>
           <div className='flex justify-center items-center w-full mt-5 hover:bg-green-900   md:gap-x-3  '>
           <img src={Clipboard} alt="pic" className=' w-5 md:w-8  ' />
           <div className=' w-20 font-bold text-green-900 hover:text-white'>
           <p className=' '>Policies</p>
           </div>
-          
           </div>
+          </Link>
+          
           <div className='flex justify-center items-center w-full mt-5 hover:bg-green-900   md:gap-x-3  '>
           <img src={Frame} alt="pic" className=' w-5 md:w-8  ' />
           <div className=' w-20 font-bold text-green-900 hover:text-white'>

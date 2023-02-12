@@ -73,7 +73,7 @@ const Maindetail = () => {
       <form onSubmit={handleSubmit} className='mt-10 '>
         <div className='flex justify-around items-center w-[80%] m-auto'>
           <div className=' w-[50%]  mt-5'>
-          <p className='w-[50%]'>Full name:</p>
+          <p className='w-[50%] font-bold text-green-900'>Full name:</p>
             <div className='flex justify-center items-center w-[90%]  '>
               <input name='fullname'
               onChange={handleChange}
@@ -87,7 +87,7 @@ const Maindetail = () => {
             </center>
           </div>
           <div className=' w-[50%]  mt-5'>
-          <p className='w-[50%]'>Email:</p>
+          <p className='w-[50%] text-green-900 font-bold'>Email:</p>
             <div className='flex justify-center items-center  w-[90%]  '>
               <input name='email'
               onChange={handleChange}
@@ -105,7 +105,7 @@ const Maindetail = () => {
 
         <div className='flex justify-around items-center w-[80%] m-auto'>
           <div className=' w-[50%]  mt-5'>
-          <p className='w-[50%]'>Username:</p>
+          <p className='w-[50%] text-green-900 font-bold'>Username:</p>
             <div className='flex justify-center items-center w-[90%]  '>
               <input name='username'
               onChange={handleChange}
@@ -120,7 +120,7 @@ const Maindetail = () => {
           </div>
 
           <div className='w-[50%] mt-5'>
-          <p className='w-[50%]'>Phone Number:</p>
+          <p className='w-[50%] text-green-900 font-bold'>Phone Number:</p>
             <div className='flex justify-center items-center  w-[90%]  '>
               <input name='phonenumber'
               onChange={handleChange}
@@ -138,7 +138,7 @@ const Maindetail = () => {
         </div>
         <div className='flex justify-around items-center w-[80%] m-auto'>
         <div className=' w-[100%] mt-5'>
-          <p className='w-[50%]'>Bio:</p>
+          <p className='w-[50%] text-green-900 font-bold'>Bio:</p>
           <div className='flex justify-center items-center  w-[100%] border border-green-900 m-auto '>
               <textarea name="text"
                onChange={handleChange}
