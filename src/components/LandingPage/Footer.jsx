@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className='bg-green-900  grid grid-cols-5 gap-x-10  p-10'>
+    <div className='bg-green-900  grid md:grid-cols-5 gap-x-10  p-10'>
           <div className='col-span-full md:col-span-2'>
             <p className='text-white  mt-5'>Products</p>
             <p className='mt-3 text-white text-xs md:text-sm'>We are a legally verified agency. We create customized Privacy Policies and Terms & Conditions in a matter of seconds to keep your business safe from any legal issue.</p>
