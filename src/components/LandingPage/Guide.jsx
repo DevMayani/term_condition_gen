@@ -10,7 +10,7 @@ const Guide = () => {
   const contThree = 'Go through the generated template that has been created for you or use the audio option for easy access.'
   const contFour = 'Click on the download button to download your template or copy the link to share your template.' 
   return (
-    <div className='p-10'>
+    <div className='p-5 md:p-10'>
             <p className='mt-2 text-xl flex justify-center items-center gap-x-1 md:mt-5'>HOW IT <span className='font-bold '>WORKS</span></p>
             <div className='grid mt-3  md:grid-cols-2 gap-x-[100px]'>
             <div className='h-[50vh]  mt-5  p-5  border bg-white md:h-[40vh] rounded-lg   drop-shadow-xl'>

@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Progress from '../TandCgen/Progress';
 
 const Modaloneprivacy = () => {
   const questionOne = "What is your Company's Name?"
   const option = '(Dont have a company registered,enter website/app name)'
   return (
     <div className='p-5 md:p-20'>
-    <div>
+       <Progress done="30"/>
+    <div className='mt-10'>
      <p className='text-green-900 font-bold'>{questionOne}</p>
      <p className='text-green-900 font-bold mt-2'>{option}</p>
 

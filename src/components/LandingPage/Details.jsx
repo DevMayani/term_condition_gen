@@ -20,25 +20,25 @@ const Details = () => {
 
               <div className=' h-[25vh] relative mt-5 '>
               <img src={Imagesgreen} alt="img" className=' w-14 md:m-auto '  />
-              <img src={Imagesh} alt="img" className='h-10 absolute top-0 inset-x-2 md:inset-x-[110px] top-2  ' />
+              <img src={Imagesh} alt="img" className='h-10 absolute top-0 inset-x-2 md:inset-x-[94px] top-2  ' />
               <p className='mt-5'>{textOne}</p>
               </div>
 
               <div className=' h-[25vh] relative mt-5'>
               <img src={Imagesgreen} alt="img" className=' w-14 md:m-auto'  />
-              <img src={VectorOne} alt="img" className='h-10 absolute top-0 inset-x-2 md:inset-x-[110px] top-2' />
+              <img src={VectorOne} alt="img" className='h-10 absolute top-0 inset-x-2 md:inset-x-[94px] top-2' />
               <p className='mt-5'>{textTwo}</p>
               </div>
 
               <div className=' h-[25vh] relative mt-5'>
               <img src={Imagesgreen} alt="img" className=' w-14 md:m-auto'  />
-              <img src={VectorThree} alt="img" className='h-10 absolute top-0 inset-x-2 md:inset-x-[110px] top-2' />
+              <img src={VectorThree} alt="img" className='h-10 absolute top-0 inset-x-2 md:inset-x-[94px] top-2' />
               <p className='mt-5'>{textThree}</p>
               </div>
 
-              <div className=' h-[25vh] relative mt-5'>
+              <div className='mt-10 h-[25vh] relative md:mt-5'>
               <img src={Imagesgreen} alt="img" className=' w-14 md:m-auto'  />
-              <img src={VectorTwo} alt="img" className='h-10 absolute top-0 inset-x-2 md:inset-x-[110px] top-2' />
+              <img src={VectorTwo} alt="img" className='h-10 absolute top-0 inset-x-2 md:inset-x-[94px] top-2' />
               <p className='mt-5'>{textFour}</p>
               </div>
 

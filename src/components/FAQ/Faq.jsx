@@ -77,7 +77,7 @@ const Faq = () => {
           </div>
           </div>
           <div className='mt-10'>
-            <p className='text-xl md:text-2xl font-bold text-green-900 '>Frequently asked  questions</p>
+            <p className='text-xl md:text-2xl font-bold text-green-900 '>Frequently asked  questions?</p>
             <p className='leading-7 mt-5'>Got questions? Here’s what you need to know about your Terma license, based on the questions we are asked the most.</p>
           </div>
         </div>

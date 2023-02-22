@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const Signup = () => {
  
-    const initialValues = { firstrname: "",lastname: "", username: "", email: "", password: "",confirmpassword: "" };
+    const initialValues = { firstname: "",lastname: "", username: "", email: "", password: "",confirmpassword: "" };
     const [formValues, setFormValues] = useState(initialValues);
     const [formErrors, setFormErrors] = useState({});
     const [isSubmit, setIsSubmit] = useState(false);
@@ -70,7 +70,7 @@ const Signup = () => {
   
   
     return (
-      <div className='grid md:grid-cols-2 p-10  max-h-[400vh]'>
+      <div className='grid p-2 md:grid-cols-2 p-10  max-h-[400vh]'>
         <div className='max-h-[200vh]  md:h-[120vh]'>
           <div>
           <img src={Images} alt="pic" className='w-[70%]' />
@@ -82,12 +82,12 @@ const Signup = () => {
           </div>
          
         </div>
-        <div className='mt-10 md:mt-0'>
+        <div className='mt-10 p-5 md:mt-0'>
           <div className='flex justify-center items-center mt-15'>
             <p className='text-xl font-bold text-green-900'>Create Account</p>
           </div>
   
-          <div className='w-[100%] flex justify-center items-center gap-x-5 border border-green-900 outline-none rounded-xl mt-5 m-auto h-10 md:w-[50%] '>
+          <div className='w-[100%] h-10 flex justify-center items-center gap-x-5 border border-green-900 outline-none rounded-xl mt-5 m-auto md:w-[50%]'>
             <p className='text-sm font-semibold '>Sign up with goggle</p>
             <img src={Gog} alt="pic" className='w-3' />
           </div>
@@ -96,9 +96,9 @@ const Signup = () => {
           <p className='text-sm text-blue-600 cursor-pointer'>or sign up with your email</p>
           <hr className='w-5 border-b border-slate-600 md:w-10' />
           </center>
-          <form onSubmit={handleSubmit} className='mt-10'>
-          <p className='text-xl m-auto  w-[100%]  md:w-[50%]'>Firstname:</p>
-            <div className='flex justify-center items-center mt-2   '>
+          <form onSubmit={handleSubmit} className='mt-5'>
+          <p className='text-lg m-auto  w-[100%] md:w-[50%]'>Firstname:</p>
+            <div className='flex justify-center items-center mt-1   '>
               <input name='firstname'
               onChange={handleChange}
                type="text"
@@ -109,8 +109,8 @@ const Signup = () => {
             <center>
             <p className="text-red-500">{formErrors.firstname}</p>
             </center>
-            <p className='text-xl m-auto mt-5  w-[100%]  md:w-[50%]'>Lastname:</p>
-            <div className='flex justify-center items-center mt-2   '>
+            <p className='text-lg m-auto mt-3  w-[100%]  md:w-[50%]'>Lastname:</p>
+            <div className='flex justify-center items-center mt-1'>
               <input name='lastname'
               onChange={handleChange}
                type="text"
@@ -122,8 +122,8 @@ const Signup = () => {
             <p className="text-red-500">{formErrors.lastname}</p>
             </center>
     
-            <p className='text-xl m-auto  w-[100%] mt-5  md:w-[50%]'>Email Address:</p>
-            <div className='flex justify-center items-center mt-2  '>
+            <p className='text-lg m-auto  w-[100%] mt-3  md:w-[50%]'>Email Address:</p>
+            <div className='flex justify-center items-center mt-1  '>
               <input name='email'
               onChange={handleChange}
                type="text"
@@ -135,8 +135,8 @@ const Signup = () => {
             <p className="text-red-500">{formErrors.email}</p>
             </center>
   
-            <p className='text-xl m-auto  w-[100%] mt-5  md:w-[50%]'>Password:</p>
-            <div className='flex justify-center items-center mt-2  '>
+            <p className='text-lg m-auto  w-[100%] mt-3  md:w-[50%]'>Password:</p>
+            <div className='flex justify-center items-center mt-1'>
               <input name='password'
               onChange={handleChange}
                type="text"
@@ -147,8 +147,8 @@ const Signup = () => {
             <center>
             <p className="text-red-500">{formErrors.password}</p>
             </center>
-            <p className='text-xl m-auto  w-[100%] mt-5  md:w-[50%]'>Confirm Password:</p>
-            <div className='flex justify-center items-center mt-2  '>
+            <p className='text-lg m-auto  w-[100%] mt-3  md:w-[50%]'>Confirm Password:</p>
+            <div className='flex justify-center items-center mt-1'>
               <input name='confirmpassword'
               onChange={handleChange}
                type="text"
@@ -159,9 +159,13 @@ const Signup = () => {
             <center>
             <p className="text-red-500">{formErrors.confirmpassword}</p>
             </center>
-            <div className='flex justify-center items-center gap-x-1 mt-2 m-auto w-[100%] md:w-[50%] '>
-              <p className='text-xs text-blue-700'>By registering, you agree to our <span className='text-red-500'>Terms</span>.Check box</p>
-              <img src={Checkbox} alt="pic" className='w-3' />
+            <div className='flex justify-start items-center m-auto mt-2 w-[100%] md:w-[50%] '>
+              <p className='text-xs text-blue-700 '>By registering,you agree to our Terms.
+              Check box</p>
+              <img src={Checkbox} alt="pic" className='w-3 bg-red-700 ' />
+              
+              
+             
             </div>
             <center className='mt-5'>
               <button type='submit' className='px-8 py-2 mb-4 border outline-none bg-green-900 w-[100%] rounded-2xl text-white text-xl md:w-[50%]'>Sign Up</button>
