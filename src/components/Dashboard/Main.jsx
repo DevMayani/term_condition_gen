@@ -17,7 +17,7 @@ const Main = () => {
       <div className='p-10'>
 
         <div className='grid md:grid-cols-3   w-[100%] gap-5'>
-          <div className=' rounded xl h-[15vh] md:h-[20vh] bg-slate-300 '>
+          <div className=' rounded xl h-[20vh] px-2 md: bg-slate-300 '>
             <div className='flex justify-center items-center gap-x-2 mt-5 '>
               <p className='text-sm font-bold md:text-2xl text-green-900'>Policies Downloaded</p>
               <img src={Receive} alt="pic" className='w-3 md:w-6' />
@@ -26,7 +26,7 @@ const Main = () => {
               <p className='text-xs md:text-lg'><span className='text-orange-600'>24+</span> New policies downloaded</p>
             </div>
           </div>
-          <div className=' rounded xl h-[15vh] md:h-[20vh] bg-slate-300 '>
+          <div className=' rounded xl h-[20vh] px-2 md: bg-slate-300 '>
           <div className='flex justify-center items-center  gap-x-3 mt-5'>
           <p className='text-sm font-bold md:text-2xl text-green-900'>New Policies Added</p>
           <img src={Receive} alt="pic" className='w-3 md:w-6' />
@@ -35,7 +35,7 @@ const Main = () => {
             <p className='text-xs md:text-lg'><span className='text-orange-600'>24+</span> New policies added</p>
             </div>
           </div>
-          <div className=' rounded xl h-[15vh] md:h-[20vh] bg-slate-300 '>
+          <div className=' rounded xl h-[20vh] px-2 md: bg-slate-300 '>
           <div className='flex justify-center items-center  gap-x-3 mt-5'>
           <p className='text-sm font-bold md:text-2xl text-green-900'>Available Policies</p>
           <img src={Receive} alt="pic" className='w-3 md:w-6' />
@@ -47,8 +47,8 @@ const Main = () => {
         </div>
         <div className='grid md:grid-cols-2 w-[85%] gap-5 m-auto mt-10'>
           <Link to=''>
-          <div className='rounded xl h-[15vh] bg-transparent border border-green-900 text-green-900   '>
-          <center className='mt-5'>
+          <div className='rounded xl h-[15vh] bg-transparent border border-green-900 text-green-900'>
+          <center className='mt-2 md:mt-4'>
             <img src={Addone} alt="pic" className='w-5 ' />
             </center>
             <center className='mt-1'>
@@ -78,7 +78,7 @@ const Main = () => {
             </center>
           </div>
           <div className='rounded xl h-[15vh] bg-transparent border border-green-900 text-green-900 '>
-          <center className='mt-5'>
+          <center className='mt-2 md:mt-4'>
             <img src={Addone} alt="pic" className='w-5 ' />
             </center>
             <center className='mt-1'>

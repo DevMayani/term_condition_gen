@@ -80,7 +80,7 @@ const Maindetail = () => {
                type="text"
                 placeholder='John Doe' 
                 value={formValues.fullname}
-                className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[100%] '/>
+                className='w-[100%] text-sm border border-green-900 outline-none rounded-xl h-10  md:w-[100%] '/>
             </div>
             <center>
             <p className="text-red-500">{formErrors.fullname}</p>
@@ -94,7 +94,7 @@ const Maindetail = () => {
                type="text"
                 placeholder='johndoe@gmail.com' 
                 value={formValues.email}
-                className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[100%] '/>
+                className='w-[100%] text-sm border border-green-900 outline-none rounded-xl h-10 md:w-[100%] '/>
             </div>
             <center>
             <p className="text-red-500">{formErrors.email}</p>
@@ -105,14 +105,14 @@ const Maindetail = () => {
 
         <div className='flex justify-around items-center w-[80%] m-auto'>
           <div className=' w-[50%]  mt-5'>
-          <p className='w-[50%] text-green-900 font-bold'>Username:</p>
+          <p className='w-[50%]  text-green-900 font-bold'>Username:</p>
             <div className='flex justify-center items-center w-[90%]  '>
               <input name='username'
               onChange={handleChange}
                type="text"
                 placeholder='Enter Username' 
                 value={formValues.username}
-                className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[100%] '/>
+                className='w-[100%] text-sm border border-green-900 outline-none rounded-xl h-10 md:w-[100%] '/>
             </div>
             <center>
             <p className="text-red-500">{formErrors.username}</p>
@@ -127,7 +127,7 @@ const Maindetail = () => {
                type="text"
                 placeholder='Enter Phone Number' 
                 value={formValues.phonenumber}
-                className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[100%] '/>
+                className='w-[100%] text-sm border border-green-900 outline-none rounded-xl h-10 md:w-[100%] '/>
             </div>
             <center>
             <p className="text-red-500">{formErrors.phonenumber}</p>
@@ -139,7 +139,7 @@ const Maindetail = () => {
         <div className='flex justify-around items-center w-[80%] m-auto'>
         <div className=' w-[100%] mt-5'>
           <p className='w-[50%] text-green-900 font-bold'>Bio:</p>
-          <div className='flex justify-center items-center  w-[100%] border border-green-900 m-auto '>
+          <div className='flex justify-center items-center text-sm  w-[100%] border border-green-900 m-auto '>
               <textarea name="text"
                onChange={handleChange}
                value={formValues.text}
@@ -155,7 +155,7 @@ const Maindetail = () => {
         </div>
         <div className='flex justify-around items-center w-[80%] m-auto'>
         <div className='mt-5'>
-              <button className='px-8 py-2 mb-4 border outline-none border border-orange-600 text-orange-600 rounded-2xl text-white text-xl '>
+              <button className='px-8 py-2 mb-4 border outline-none border border-orange-600 bg-orange-600 rounded-2xl text-white text-xl '>
                 Cancel</button>
             </div>
 
@@ -170,7 +170,7 @@ const Maindetail = () => {
       </div>
 
       <div className='block md:hidden'>
-     <div className='p-5 w-[90%] flex justify-around items-center gap-x-5 '>
+     <div className='p-8 w-[100%] flex justify-around items-center gap-x-5 '>
       <p className='text-xs hover:underline text-green-900 font-bold cursor-pointer md:text-xl'>Account Setting</p>
       <p className='text-xs hover:underline text-green-900 font-bold cursor-pointer md:text-xl'>Security</p>
       <p className='text-xs hover:underline text-green-900 font-bold cursor-pointer md:text-xl'>Notification</p>
@@ -194,7 +194,7 @@ const Maindetail = () => {
                type="text"
                 placeholder='John Doe' 
                 value={formValues.fullname}
-                className='w-[100%] h-6 border border-green-900 outline-none   '/>
+                className='w-[100%] text-xs h-6 border border-green-900 outline-none   '/>
             </div>
             <center>
             <p className="text-red-500 text-xs">{formErrors.fullname}</p>
@@ -208,7 +208,7 @@ const Maindetail = () => {
                type="text"
                 placeholder='johndoe@gmail.com' 
                 value={formValues.email}
-                className='w-[100%] h-6 border border-green-900 outline-none '/>
+                className='w-[100%] text-xs h-6 border border-green-900 outline-none '/>
             </div>
             <center>
             <p className="text-red-500 text-xs">{formErrors.email}</p>
@@ -226,7 +226,7 @@ const Maindetail = () => {
                type="text"
                 placeholder='Enter Username' 
                 value={formValues.username}
-                className='w-[100%] h-6 border border-green-900 outline-none  '/>
+                className='w-[100%] text-xs h-6 border border-green-900 outline-none  '/>
             </div>
             <center>
             <p className="text-red-500 text-xs">{formErrors.username}</p>
@@ -241,7 +241,7 @@ const Maindetail = () => {
                type="text"
                 placeholder='Enter Phone Number' 
                 value={formValues.phonenumber}
-                className='w-[100%] border border-green-900 outline-none '/>
+                className='w-[100%] text-xs border border-green-900 outline-none '/>
             </div>
             <center>
             <p className="text-red-500 text-xs">{formErrors.phonenumber}</p>
@@ -269,7 +269,7 @@ const Maindetail = () => {
         </div>
         <div className='flex justify-around items-center w-[80%] m-auto'>
         <div className='mt-5'>
-              <button className='px-3 py-1 mb-4 border outline-none border border-orange-600 text-orange-600 rounded-2xl text-white text-sm '>
+              <button className='px-3 py-1 mb-4 border outline-none border border-orange-600 bg-orange-600 rounded-2xl text-white text-sm '>
                 Cancel</button>
             </div>
 
