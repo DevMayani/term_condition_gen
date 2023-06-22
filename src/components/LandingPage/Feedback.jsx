@@ -45,7 +45,7 @@ const Feedback = () => {
               {
                 name.map((datum) => {
                   return (
-                    <div className='h-[50vh] p-5 mt-5 border bg-green-900 md:h-[45vh] rounded-lg  drop-shadow-xl '>
+                    <div className='p-5 mt-5 border bg-green-900 md:rounded-lg  drop-shadow-xl '>
                       <img src={datum.picture} alt="pic" className='w-[30%] m-auto' />
                       <p className='text-center text-white mt-3'>{datum.clientName}</p>
                       <p className=' flex justify-center mt-3 text-white'>{datum.feedback}</p>

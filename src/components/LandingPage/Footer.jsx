@@ -23,7 +23,7 @@ const Footer = () => {
           </Link>
           </div>
           <div className='col-span-1 md:col-span-1'>
-          <p className=' text-white font-bold  mt-5'>Resourses</p>
+          <p className=' text-white font-bold  mt-5 text-sm'>Resourses</p>
           <Link to='/footerTermandcond'>
           <p className='mt-2 text-white text-xs hover:text-green-300 '>Terms and conditions</p>
           </Link>
@@ -32,12 +32,12 @@ const Footer = () => {
           </Link>
           </div>
           <div className='col-span-1 md:col-span-1 '>
-          <p className=' text-white font-bold  mt-5'>Support</p>
+          <p className=' text-white font-bold  mt-5 text-sm'>Support</p>
           <Link to='/contact'>
-          <p className='mt-3 text-white text-xs hover:text-green-300 '>Contact us</p>
+          <p className='mt-2 text-white text-xs hover:text-green-300 '>Contact us</p>
           </Link>
           <Link to='/faq'>
-          <p className='mt-7 text-white text-xs hover:text-green-300 md:mt-3'>FAQs</p>
+          <p className='mt-3 text-white text-xs hover:text-green-300 md:mt-3'>FAQs</p>
           </Link>
           </div>
 

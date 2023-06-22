@@ -13,7 +13,7 @@ const Home = () => {
     <div className='overflow-x-hidden'>
       <Navbar />
       <Ready />
-      <div className='bg-green-800 h-5 md: w-full h-8'></div>
+      <div className='bg-green-800 h-3 md:w-full md:h-5'></div>
       <Details />
       <Termscond />
       <Guide />

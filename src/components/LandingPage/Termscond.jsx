@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const Termscond = () => {
   const message = 'Having a good Terms of Service (TOS) is very important for every website or application. Basically, is a legal agreement between a service and aperson that wants to use that service.We will take care to clear all the doubts of your current and upcoming users with our highly professional TOS generator.'
   return (
-    <div className='grid  mt-0 md:grid-cols-2'>
+    <div className='grid mt-0 md:grid-cols-2'>
          <div className='p-[20px]'>
-          <img src={HandImage} alt="img" className='w-[70%]'  />
+          <img src={HandImage} alt="img" className='lg:w-[70%]'  />
           </div>
           <div className='p-[20px]'>
             <div className=''>

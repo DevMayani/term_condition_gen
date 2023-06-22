@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 const Ready = () => {
   return (
     <div className='px-[20px] md:p-[40px] '>
-          <div className='grid mt-20 md:grid-cols-2  mt-10 '>
+          <div className='grid md:grid-cols-2 md:mt-10'>
             <div className='mt-[10px] w-full md:mt-[80px] '>
             <div>
-          <p className='text-2xl font-extrabold md:text-6xl font-bold'>Valid Solution for <br  className='hidden md:block'/> Your Product T&Cs</p>
+          <p className='text-2xl font-extrabold md:text-4xl lg:text-5xl xl:text-6xl'>Valid Solution for <br  className='hidden md:block'/> Your Product T&Cs</p>
           </div>
           <div className='mt-5 md:mt-15'>
           <p>We offer valid Terms and Condition Templates For small scale 

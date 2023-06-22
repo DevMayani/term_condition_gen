@@ -42,17 +42,17 @@ return (
 
       </div>
 
-    <ul className={!nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-8'}>
-    <li className='border-b-2 border-zinc-300 w-full hover:text-green-600'><Link onClick={handleClose} to="/" smooth={true} duration={500}>Home</Link></li>
-        <li className='border-b-2 border-zinc-300 w-full hover:text-green-600'><Link onClick={handleClose} to="/about" smooth={true} duration={500}>About</Link></li>
-        <li className='border-b-2 border-zinc-300 w-full hover:text-green-600'><Link onClick={handleClose} to="/contact" smooth={true} offset={-50} duration={500}>Contact Us</Link></li>
+    <ul className={!nav ? 'hidden' : 'absolute bg-zinc-200 w-full'}>
+    <li className='border-b-2 border-zinc-300 w-full py-2 px-8 hover:text-green-600'><Link onClick={handleClose} to="/" smooth={true} duration={500}>Home</Link></li>
+        <li className='border-b-2 border-zinc-300 w-full px-8 py-2 hover:text-green-600'><Link onClick={handleClose} to="/about" smooth={true} duration={500}>About</Link></li>
+        <li className='border-b-2 border-zinc-300 w-full px-8 py-2 hover:text-green-600'><Link onClick={handleClose} to="/contact" smooth={true} offset={-50} duration={500}>Contact Us</Link></li>
 
-      <div className='flex flex-col my-2'>
+      <div className='flex flex-col my-2 px-8 py-1' >
       <Link to='/signin'>
-      <button className='border border-green-900 rounded-xl  text-green-800 px-8 py-1 mb-2 text-xl hover:text-green-600'>Login</button>
+      <button className='border border-green-900 rounded-xl  text-green-800  w-[100px] py-1 mb-2 text-xl hover:text-green-600'>Login</button>
       </Link>
       <Link to='/signup'>
-          <button className='border  bg-green-800 px-8 py-1 mb-2 rounded-xl text-white text-xl'>Sign up</button>
+          <button className='border  bg-green-800 w-[100px] py-1 mb-2 rounded-xl text-white text-xl'>Sign up</button>
       </Link>
       </div>
     </ul>
