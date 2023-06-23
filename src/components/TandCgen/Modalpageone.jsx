@@ -56,17 +56,17 @@ const Modalpageone = () => {
 
       <form onSubmit={handleSubmit} className='mt-10'>
      <div className='mt-10'>
-      <p className='text-green-900 font-bold'>{questionOne}</p>
-      <p className='text-green-900 font-bold mt-2'>{option}</p>
+      <p className='text-green-900 text-lg md:text-xl font-extrabold'>{questionOne}</p>
+      <p className='text-green-900 text-sm  md:text-lg font-bold mt-2'>{option}</p>
 
-      <div className='w-[100%] md:w-[100%] h-[8vh] border border-bg-green-900 drop-shadow-xl mt-5'>
+      <div className='w-[100%] md:w-[100%] border border-bg-green-900 drop-shadow-xl mt-5'>
         
       <input name='companyname'
       onChange={handleChange}
       type="text"
       placeholder='Enter Company Name'
       value={formValues.companyname}
-      className='w-[100%] h-[8vh] outline-none' />
+      className='w-[100%] p-2 h-[6vh] font-bold outline-none' />
       </div>
       <center>
           <p className="text-red-500">{formErrors.companyname}</p>
@@ -75,15 +75,15 @@ const Modalpageone = () => {
 
       <div className='mt-10'>
 
-      <p className='text-green-900 font-bold'>{questionTwo}</p>
+      <p className='text-green-900 text-lg md:text-xl font-extrabold'>{questionTwo}</p>
 
-      <div className='w-[100%] md:w-[100%] h-[8vh] border border-bg-green-900 drop-shadow-xl mt-5'>
+      <div className='w-[100%] md:w-[100%] border border-bg-green-900 drop-shadow-xl mt-5'>
       <input name='websitename' 
       onChange={handleChange}
       type="text"
       placeholder='Enter website name'
       value={formValues.websitename}
-      className='w-[100%] h-[8vh] outline-none' />
+      className='w-[100%] p-2 h-[6vh] outline-none' />
       </div>
       <center>
           <p className="text-red-500">{formErrors.websitename}</p>
@@ -91,14 +91,14 @@ const Modalpageone = () => {
       </div>
 
       <div className='mt-10'>
-      <p className='text-green-900 font-bold'>{questionThree}</p>
+      <p className='text-green-900 text-lg md:text-xl font-extrabold'>{questionThree}</p>
       <div className='w-[100%] md:w-[100%] h-[8vh] border border-bg-green-900 drop-shadow-xl mt-5'>
       <input name='websitelink'
       onChange={handleChange}
       type="text"
       placeholder='Enter website url'
       value={formValues.websitelink}
-      className='w-[100%] h-[8vh] outline-none' />
+      className='w-[100%] p-2 h-[6vh] outline-none' />
       </div>
       <center>
           <p className="text-red-500">{formErrors.websitelink}</p>

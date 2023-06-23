@@ -34,12 +34,18 @@ const Privacymodalthree = () => {
         questions.map((datum) => {
           return(
             <div className='mt-10'>
-              <label className='text-green-900 font-bold'>{datum.mainQuestion}</label> <br />
+              <label className='text-green-900  font-extrabold'>{datum.mainQuestion}</label> <br />
               <div className='flex justify-start items-center mt-5 gap-x-3'>
-             <input type="radio" value="Yes,we do" name="choice" className='' /><p>{datum.optionOne}</p><br />
+             <input 
+             type="radio" 
+             value="Yes,we do" 
+             name={`choice-${datum.id}`} className='' /><p>{datum.optionOne}</p><br />
              </div>
              <div className='flex justify-start items-center mt-5 gap-x-3'>
-             <input type="radio" value="No,we dont" name="choice" className='' /><p>{datum.optionTwo}</p><br />
+             <input 
+             type="radio" 
+             value="No,we dont" name={`choice-${datum.id}`} 
+             className='' /><p>{datum.optionTwo}</p><br />
              </div>
             
             </div>
@@ -56,7 +62,7 @@ const Privacymodalthree = () => {
    <Link to='/privacymodaltwo'>
      <div className='mt-5'>
      <button type='submit'
-     className='px-8 py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white text-xl '
+     className='px-8 py-1 md:py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white md:text-xl '
      >Back</button>
      </div>
    </Link>
@@ -64,7 +70,7 @@ const Privacymodalthree = () => {
      <Link to='/privacyfinal'>
       <div className='mt-5'>
         <button type='submit'
-         className='px-8 py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white text-xl '>
+         className='px-8 py-1 md:py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white md:text-xl '>
              Next</button>
       </div>
      </Link>

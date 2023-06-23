@@ -14,51 +14,51 @@ import { Link } from 'react-router-dom';
 const Sidebars = () => {
   
   return (
-    <div className='w-[50%] h-screen cursor-pointer text-xs md:w-[20%] border border-bg-900'>
+    <div className='w-[50%] h-screen cursor-pointer md:w-[30%] lg:w-[25%] border border-bg-900'>
           <Link to='/tandCgenpage'>
-          <div className='px-2 flex justify-center items-center w-full mt-5 hover:bg-green-900 text-white gap-x-3  md:gap-x-3  '>
-          <img src={Element} alt="pic" className=' w-5 md:w-8  ' />
-          <div className=' w-20 font-bold text-green-900 hover:text-white'>
-          <p className=' '>Dashboard</p>
+          <div className='px-2 py-3 flex justify-center items-center w-full mt-5 hover:bg-green-300 gap-x-3  md:gap-x-3  '>
+          <img src={Element} alt="pic" className=' w-4 md:w-6 lg:w-8 ' />
+          <div className=' w-20 font-bold text-green-900'>
+          <p className='text-xs md:text-lg xl:text-lg'>Dashboard</p>
           </div>
           </div>
           </Link>
           <Link to='/privacypolicygen'>
-          <div className='px-2 flex justify-center items-center w-full mt-5 hover:bg-green-900 gap-x-3   md:gap-x-3  '>
-          <img src={Clipboard} alt="pic" className=' w-5 md:w-8  ' />
-          <div className=' w-20 font-bold text-green-900 hover:text-white'>
-          <p className=' '>Policies</p>
+          <div className='px-2 py-3 flex justify-center items-center w-full mt-5 hover:bg-green-300 gap-x-3   md:gap-x-3  '>
+          <img src={Clipboard} alt="pic" className='w-4 md:w-6 lg:w-8' />
+          <div className=' w-20 font-bold text-green-900 '>
+          <p className='text-xs md:text-lg xl:text-lg'>Policies</p>
           </div>
           </div>
           </Link>
           
-          <div className='px-2 flex justify-center items-center w-full mt-5 hover:bg-green-900 gap-x-3   md:gap-x-3  '>
-          <img src={Frame} alt="pic" className=' w-5 md:w-8  ' />
-          <div className=' w-20 font-bold text-green-900 hover:text-white'>
-          <p className=' '>Downloads</p>
+          <div className='px-2 py-3 flex justify-center items-center w-full mt-5 hover:bg-green-300 gap-x-3   md:gap-x-3  '>
+          <img src={Frame} alt="pic" className='w-4 md:w-6 lg:w-8' />
+          <div className=' w-20 font-bold text-green-900 '>
+          <p className='text-xs md:text-lg xl:text-lg'>Downloads</p>
           </div>
           
           </div>
-          <div className='px-2 flex justify-center items-center w-full mt-5 hover:bg-green-900 gap-x-3   md:gap-x-3  '>
-          <img src={Archive} alt="pic" className=' w-5 md:w-8  ' />
-          <div className=' w-20 font-bold text-green-900 hover:text-white'>
-          <p className=' '>Saved</p>
+          <div className='px-2 py-3 flex justify-center items-center w-full mt-5 hover:bg-green-300 gap-x-3   md:gap-x-3  '>
+          <img src={Archive} alt="pic" className='w-4 md:w-6 lg:w-8' />
+          <div className=' w-20 font-bold text-green-900 '>
+          <p className='text-xs md:text-lg xl:text-lg'>Saved</p>
           </div>
           
           </div>
           <Link to="/dashboardset">
-          <div className='px-2 flex justify-center items-center w-full mt-5 hover:bg-green-900 gap-x-3   md:gap-x-3  '>
-          <img src={Setting} alt="pic" className=' w-5 md:w-8  ' />
-          <div className=' w-20 font-bold text-green-900 hover:text-white'>
-          <p className=' '>Settings</p>
+          <div className='px-2 py-3 flex justify-center items-center w-full mt-5 hover:bg-green-300 gap-x-3   md:gap-x-3  '>
+          <img src={Setting} alt="pic" className='w-4 md:w-6 lg:w-8' />
+          <div className=' w-20 font-bold text-green-900 '>
+          <p className='text-xs md:text-lg xl:text-lg'>Settings</p>
           </div>
           
           </div>
           </Link>
-          <div className='px-2 flex justify-center items-center w-full mt-[150px] hover:bg-green-900 gap-x-3   md:gap-x-3  '>
-          <img src={Log} alt="pic" className=' w-5 md:w-8  ' />
-          <div className=' w-20 font-bold text-green-900 hover:text-white'>
-          <p className=' '>Logout</p>
+          <div className='px-2 py-3 flex justify-center items-center w-full mt-[150px] hover:bg-green-300 gap-x-3   md:gap-x-3  '>
+          <img src={Log} alt="pic" className='w-4 md:w-6 lg:w-8' />
+          <div className=' w-20 font-bold text-green-900'>
+          <p className='text-xs md:text-lg xl:text-lg'>Logout</p>
           </div>
           
           </div>

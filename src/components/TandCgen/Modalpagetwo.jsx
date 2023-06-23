@@ -47,10 +47,16 @@ const Modalpagetwo = () => {
             <div className='mt-10'>
               <label className='text-green-900 font-bold'>{datum.mainQuestion}</label> <br />
               <div className='flex justify-start items-center mt-5 gap-x-3'>
-             <input type="radio" value="Yes,we do" name="choice" className='' /><p>{datum.optionOne}</p><br />
+             <input type="radio" 
+             value="Yes,we do"
+             name={`choice-${datum.id}`}
+              className='' />
+              <p>{datum.optionOne}</p><br />
              </div>
              <div className='flex justify-start items-center mt-5 gap-x-3'>
-             <input type="radio" value="No,we dont" name="choice" className='' /><p>{datum.optionTwo}</p><br />
+             <input type="radio" value="No,we dont" 
+             name={`choice-${datum.id}`}
+             className='' /><p>{datum.optionTwo}</p><br />
              </div>
             
             </div>

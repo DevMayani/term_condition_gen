@@ -9,32 +9,32 @@ const Modaloneprivacy = () => {
     <div className='p-5 md:p-20'>
        <Progress done="30"/>
     <div className='mt-10'>
-     <p className='text-green-900 font-bold'>{questionOne}</p>
-     <p className='text-green-900 font-bold mt-2'>{option}</p>
+     <p className='text-green-900 text-lg md:text-xl font-extrabold'>{questionOne}</p>
+     <p className='text-green-900 text-sm md:text-lg font-bold '>{option}</p>
 
-     <div className='w-[100%] md:w-[100%] h-[8vh] border border-bg-green-900 drop-shadow-xl mt-5'>
+     <div className='w-[100%] md:w-[100%] border border-bg-green-900 drop-shadow-xl mt-5'>
      <input type="text"
      placeholder='Enter Company Name'
-     className='w-[100%] h-[8vh] outline-none' />
+     className='w-[100%] p-2 h-[6vh] font-bold outline-none' />
      </div>
      </div>
      <div className='mt-10'>
-     <p className='text-green-900 font-bold'>{questionOne}</p>
+     <p className='text-green-900 text-lg md:text-xl font-extrabold'>{questionOne}</p>
 
-     <div className='w-[100%] md:w-[100%] h-[8vh] border border-bg-green-900 drop-shadow-xl mt-5'>
+     <div className='w-[100%] md:w-[100%]  border border-bg-green-900 drop-shadow-xl mt-5'>
      <input type="text"
      placeholder='Enter Company Name'
-     className='w-[100%] h-[8vh] outline-none' />
+     className='w-[100%] p-2 h-[6vh] outline-none' />
      </div>
      </div>
      <div className='mt-10'>
-     <p className='text-green-900 font-bold'>{questionOne}</p>
+     <p className='text-green-900 text-lg md:text-xl font-extrabold'>{questionOne}</p>
      
 
-     <div className='w-[100%] md:w-[100%] h-[8vh] border border-bg-green-900 drop-shadow-xl mt-5'>
+     <div className='w-[100%] md:w-[100%] border border-bg-green-900 drop-shadow-xl mt-5'>
      <input type="text"
      placeholder='Enter Company Name'
-     className='w-[100%] h-[8vh] outline-none' />
+     className='w-[100%] p-2 h-[6vh] outline-none' />
      </div>
      </div>
      <div className='w-[100%] md:w-[100%] h-[8vh] flex justify-between items-center mt-10'>

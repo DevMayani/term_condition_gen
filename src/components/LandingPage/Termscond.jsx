@@ -12,8 +12,8 @@ const Termscond = () => {
           <div className='p-[20px]'>
             <div className=''>
             <p className='text-xl mt-5'>Why you Need</p>
-            <p  className='text-2xl md:text-4xl font-semibold mt-3'>Terms and Conditions</p>
-            <div className='w-[100%] max-h-[65vh] p-5 mt-5 border bg-white md:w-[80%] rounded-lg  drop-shadow-xl'>
+            <p  className='text-2xl md:text-3xl lg:text-4xl font-semibold mt-3'>Terms and Conditions</p>
+            <div className='w-[100%] px-5 py-10 mt-5 border bg-white md:w-[100%] rounded-lg  drop-shadow-xl'>
               <p className='font-bold'>{message}</p>
             </div>
           </div>

@@ -69,8 +69,8 @@ const Termandcon = () => {
 
   return (
     
-    <div>
-      <div className=' w-[100%]   '>
+    <div className='py-10 md:py-20'>
+      <div className=' w-[100%] '>
      <div className=' flex justify-between items-center px-5 md:px-10'>
      <div className='w-[40%] flex justify-start items-center '>
         <img src={Images} alt="pic" className=' w-[300px] md:w-[200px] ' />
@@ -78,7 +78,7 @@ const Termandcon = () => {
       <Link to='/modalfinal'>
          <div className='mt-5'>
            <button type='submit'
-            className='px-8 py-2 mb-4 border outline-none border border-orange-600 bg-orange-600 text-white text-xl '>
+            className='px-8 py-2 mb-4 border outline-none border-orange-600 bg-orange-600 text-white text-xl '>
                 Cancel</button>
          </div>
         </Link>
@@ -94,41 +94,41 @@ const Termandcon = () => {
 
 
      <div className='p-10 block md:hidden'>
-      <p className='text-green-900 font-bold text-lg md:text-xl'>TERM AND CONDITIONS</p>
+      <p className='text-green-900 font-bold text-lg'>TERM AND CONDITIONS</p>
       <img src={Menu} alt="pic" className='w-[80%] mt-5' />
      </div>
 
-     <div className='px-10 leading-7 mt-5 text-sm md:px-20 mt-10'>
+     <div className='px-10 leading-7 mt-3 text-sm md:px-20 md:mt-10'>
       <div>
-      <p className='text-xl text-green-900 font-semibold'>Introduction</p>
-      <p >{intro}</p>
-      <p className='mt-2'>{introc}</p>
+      <p className='text-lg md:text-xl text-green-900 font-semibold'>Introduction</p>
+      <p className='mt-2'>{intro}</p>
+      <p className='mt-2 '>{introc}</p>
       <p className='mt-2'>{introcont}</p>
       <ul className='list-disc ml-5 '>{listItems}</ul>
       </div>
 
       <div>
-      <p className='text-xl text-green-900 font-bold mt-5'>Registration and account</p>
-      <p className='mt-2'>{reg}</p>
+      <p className='text-lg md:text-xl text-green-900 font-bold mt-5'>Registration and account</p>
+      <p className='mt-2 '>{reg}</p>
       <p className='mt-2'>{reginfo}</p>
       <ul className='list-disc ml-5 mt-2'>{optionItems}</ul>
       </div>
 
       <div>
-      <p className='text-xl text-green-900 font-bold mt-5'>Service Limitations and Modifications</p>
+      <p className='text-lg md:text-xl text-green-900 font-bold mt-5'>Service Limitations and Modifications</p>
       <p className='mt-2'>{serviceInfo}</p>
       <ul className='list-disc ml-5 mt-2'>{serviceItems}</ul>
       </div>
 
       <div>
-      <p className='text-xl text-green-900 font-bold mt-5'>Withdrawal/Cancelation right</p>
+      <p className='text-lg md:text-xl text-green-900 font-bold mt-5'>Withdrawal/Cancelation right</p>
       <p className='mt-2'>{withdralSer}</p>
       <p className='mt-2'>{withdrawalService}</p>
      
       </div>
 
       <div>
-      <p className='text-xl text-green-900 font-bold mt-5'>Use of website and mobile applications</p>
+      <p className='text-lg md:text-xl text-green-900 font-bold mt-5'>Use of website and mobile applications</p>
       <p className='mt-2'>{use}</p>
       <ol className='list-decimal ml-5 mt-2'>{mobileItems}</ol>
       <p className='mt-2'>{useWord}</p>
