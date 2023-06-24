@@ -27,7 +27,7 @@ const FooterPrivacypolicy = () => {
               <img src={Add} alt="pic" className='w-[10%] md:w-[5%]' />
               <p className='text-white font-bold text-sm md:text-2xl'>1. OUR WEBSITES AND SERVICES</p>
             </div>
-            <div  className='px-3 mt-5 md:px-10 mt-10'>
+            <div  className='px-3 mt-5 md:px-10 md:mt-10'>
               <p  className='text-sm md:text-lg leading-7 mt-3'>{textTwo}</p>
               <p  className='text-sm md:text-lg leading-7 mt-3'>{textTwo}</p>
               <p  className='text-sm md:text-lg leading-7 mt-3'>{textTwo}</p>
@@ -37,7 +37,7 @@ const FooterPrivacypolicy = () => {
               <img src={Add} alt="pic" className='w-[10%] md:w-[5%]' />
               <p className='text-white font-bold text-sm md:text-2xl'>2. INTELLECTUAL PROPERTY RIGHTS</p>
             </div>
-            <div  className='px-3 mt-5 md:px-10 mt-10'>
+            <div  className='px-3 mt-5 md:px-10 md:mt-10'>
               <p  className='text-sm md:text-lg leading-7 mt-3'>{textTwo}</p>
               <p  className='text-sm md:text-lg leading-7 mt-3'>{textTwo}</p>
               <p  className='text-sm md:text-lg leading-7 mt-3'>{textTwo}</p>
@@ -48,7 +48,7 @@ const FooterPrivacypolicy = () => {
               <img src={Add} alt="pic" className='w-[10%] md:w-[5%]' />
               <p className='text-white font-bold text-sm md:text-2xl'>3. USER REPRESENTATIONS</p>
             </div>
-            <div  className='px-3 mt-5 md:px-10 mt-10'>
+            <div  className='px-3 mt-5 md:px-10 md:mt-10'>
               <p  className='text-sm md:text-lg leading-7 mt-3'>{textTwo}</p>
               <p  className='text-sm md:text-lg leading-7 mt-3'>{textTwo}</p>
             </div>

@@ -62,7 +62,7 @@ const Privacymodalthree = () => {
    <Link to='/privacymodaltwo'>
      <div className='mt-5'>
      <button type='submit'
-     className='px-8 py-1 md:py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white md:text-xl '
+     className='px-8 py-2 md:py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white md:text-xl '
      >Back</button>
      </div>
    </Link>
@@ -70,7 +70,7 @@ const Privacymodalthree = () => {
      <Link to='/privacyfinal'>
       <div className='mt-5'>
         <button type='submit'
-         className='px-8 py-1 md:py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white md:text-xl '>
+         className='px-8 py-2 md:py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white md:text-xl '>
              Next</button>
       </div>
      </Link>

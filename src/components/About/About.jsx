@@ -10,85 +10,104 @@ import Discount from '../../images/discount.png';
 
 
 const About = () => {
+  const Details = [
+    {
+      id:1,
+      subOne: <p className='text-green-900'>2022</p>,
+      subTwo:  <p className='font-semibold uppercase'>Founded</p>,
+    },
+    {
+      id:2,
+      subOne: <p className='text-green-900'>10+</p>,
+      subTwo:<p className='font-semibold uppercase'>Supported Countries</p>
+    },
+    {
+      id:3,
+      subOne: <p className='text-green-900'>20+</p>,
+      subTwo:  <p className='font-semibold uppercase'>Users</p>,
+    },
+    {
+      id:4,
+      subOne:<p className='text-green-900 '>20+</p>,
+      subTwo:  <p className='font-semibold uppercase'>Policies Created</p>,
+    },
+  ]
+  const Comp = [
+    {
+      id:1,
+      picOne: Eye,
+      text:  <p className=''>Basic Privacy <br /> Policy</p>,
+      picTwo: Send
+
+    },
+    {
+      id:2,
+      picOne: Receipt,
+      text:  <p className=''>Terms and <br /> Conditions</p>,
+      picTwo: Send
+
+    }, {
+      id:3,
+      picOne: Discount,
+      text:  <p className=''>Cookies <br /> Policy</p>,
+      picTwo: Send
+
+    }
+  ]
   const text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet scelerisque euismod phasellus nibh. Rutrum metus massa tincidunt donec lacus, in. Velit, et nibh orci nunc. A arcu, maecenas faucibus pellentesque et amet.'
   return (
     <div className='overflow-hidden'>
      <Navbar  />
-     <div className='px-5 md:px-10'>
-      <div className='grid  md:grid-cols-2'>
+     <div className='px-5 lg:px-10'>
+      <div className='grid lg:grid-cols-2'>
         <div className='mt-10 '>
           <p className='text-4xl font-semibold w-[70%]'>Who are we?</p>
-          <p className=' w-[70%] text-xl mt-10'>{text}</p>
+          <p className='lg:w-[70%] text-sm md:text-lg lg:text-xl mt-5 md:mt-10'>{text}</p>
         </div>
         <div className=' mt-10'>
           <img src={Three} alt="pic" className='' />
         </div>
       </div>
-      <div className='grid mt-20  md:grid-cols-2'>
+      <div className='grid mt-20  lg:grid-cols-2'>
       <div>
         <img src={Four} alt="pic" className='w-[90%]' />
       </div>
       <div className='mt-20 '>
           <p className='text-4xl font-semibold w-[70%'>Who do we do?</p>
-          <p className=' w-[70%] text-xl mt-10'>{text}</p>
+          <p className='lg:w-[70%] text-sm md:text-lg lg:text-xl mt-5 md:mt-10'>{text}</p>
         </div>
       </div>
-      <div className='flex justify-around items-center mt-20 h-[20vh] w-[100%]'>
-      <center className=' w-[20%] h-[8vh]  text-xs font-bold md:text-xl'>
-          <p className='text-green-900'>2022</p>
-          <p className='font-semibold uppercase'>Founded</p>
-        </center>
-      
-        <center className=' w-[20%] h-[8vh]  text-xs font-bold md:text-xl'>
-          <p className='text-green-900'>10+</p>
-          <p className='font-semibold uppercase'>Supported Countries</p>
-        </center>
-        <center className=' w-[20%] h-[8vh]  text-xs font-bold md:text-xl'>
-          <p className='text-green-900 '>20+</p>
-          <p className='font-semibold uppercase'>Users</p>
-        </center>
-        <center className=' w-[20%] h-[8vh]  text-xs font-bold md:text-xl'>
-          <p className='text-green-900 '>20+</p>
-          <p className='font-semibold uppercase'>Policies Created</p>
-        </center>
+      <div className='grid grid-cols-4 gap-4 mt-20'>
+        {
+          Details.map((datum) => (
+            <center className=' py-10 text-xs md:text-xl'>
+            <p className='text-green-900 font-bold'>{datum.subOne}</p>
+            <p className='uppercase'>{datum.subTwo}</p>
+          </center>
+          ))
+        }
       </div>
-      <div className='grid h-[35vh]  bg-green-900 md:grid-cols-2'>
+      <div className='grid py-5 md:py-10 bg-green-900 md:grid-cols-2'>
         <div className='flex justify-center items-center'>
         <div className='w-[70%]'>
-              <button className='text-green-900 w-[100%] border border-orange-600 bg-orange-600 font-bold px-10 py-3 mb-4 rounded-xl text-xl md:py-8  '>Our Services</button>
+              <button className='text-green-900 w-[100%] border border-orange-600 bg-orange-600 font-bold px-10 py-2 mb-4 rounded-xl md:text-xl md:py-5 '>Our Services</button>
             </div>
 
         </div>
-        <div className='gap-x-2 w-[100%] flex justify-center items-center md:gap-x-5'>
-        <div className='flex justify-center items-start h-[20vh] w-[30%] border bg-white rounded-xl'>
-          <div className='mt-2'>
-          <img src={Eye} alt="pic" className='w-5 m-auto ' />
-          <center className='mt-2'>
-          <p className='font-semibold'>Basic Privacy <br /> Policy</p>
-          </center>
-            <img src={Send} alt="pic" className='w-5 mt-3 m-auto' />
-          </div>
-          </div>
-           
-          <div className='flex justify-center items-start h-[20vh] w-[30%] border bg-white rounded-xl'>
-          <div className='mt-2'>
-          <img src={Receipt} alt="pic" className='w-5 m-auto ' />
-          <center className='mt-2'>
-          <p className='font-semibold'>Terms and <br /> Conditions</p>
-          </center>
-          <img src={Send} alt="pic" className='w-5 mt-3 m-auto' />
-          </div>
-          </div>
-
-          <div className='flex justify-center items-start h-[20vh] w-[30%] border bg-white rounded-xl'>
-          <div className='mt-2'>
-          <img src={Discount} alt="pic" className='w-5 m-auto ' />
-          <center className='mt-2 md:mt-5'>
-          <p className='font-semibold'>Cookies Policy</p>
-          </center>
-          <img src={Send} alt="pic" className='w-5 mt-3 m-auto md:mt-5' />
-          </div>
-          </div>
+        <div className='gap-x-2 w-[100%] md:px-2 flex justify-center items-center md:gap-x-5'>
+          {
+            Comp.map((items) => (
+              <div className='flex justify-center items-start py-5 w-[30%] border bg-white rounded-xl'>
+              <div className='mt-2'>
+              <img src={items.picOne} alt="pic" className='w-5 m-auto ' />
+              <center className='mt-2'>
+              <p>{items.text}</p>
+              </center>
+                <img src={items.picTwo} alt="pic" className='w-5 mt-3 m-auto' />
+              </div>
+              </div>
+            ))
+          }
 
         </div>
 

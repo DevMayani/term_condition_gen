@@ -72,7 +72,7 @@ const Modalpagetwo = () => {
       <Link to='/modalpageone'>
         <div className='mt-5'>
         <button type='submit'
-        className='px-8 py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white text-xl '
+        className='px-8 py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white md:text-xl '
         >Back</button>
         </div>
       </Link>
@@ -80,7 +80,7 @@ const Modalpagetwo = () => {
         <Link to='/modalpagethree'>
          <div className='mt-5'>
            <button type='submit'
-            className='px-8 py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white text-xl '>
+            className='px-8 py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white md:text-xl '>
                 Next</button>
          </div>
         </Link>

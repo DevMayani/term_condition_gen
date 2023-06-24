@@ -110,7 +110,7 @@ const Modalpageone = () => {
         <div className='mt-5'>
         <Link to='/tandCgenpage'>
         <button type='button'
-        className='px-8 py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white text-xl '
+        className='px-8 py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white md:text-xl '
         >Back
         </button>
         </Link>
@@ -121,7 +121,7 @@ const Modalpageone = () => {
          <div className='mt-5'>
          <Link to='/Modalpagetwo'>
            <button type='submit'
-            className='px-8 py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white text-xl '>
+            className='px-8 py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white md:text-xl '>
                 Next
                 </button>
                 </Link>

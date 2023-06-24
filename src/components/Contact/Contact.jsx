@@ -61,27 +61,27 @@ const Contact = () => {
           <p>Send Us An Email</p>
         </center>
         <form onSubmit={handleSubmit} className='mt-10'>
-          <p className='text-xl m-auto  w-[100%]  md:w-[50%]'>Fullname:</p>
+          <p className='text-xl m-auto  w-[100%] md:w-[70%] lg:w-[50%]'>Fullname:</p>
             <div className='flex justify-center items-center mt-2   '>
               <input name='fullname'
               onChange={handleChange}
                type="text"
-                placeholder='Enter Fullname' 
+                placeholder='Enter Full name' 
                 value={formValues.fullname}
-                className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
+                className='w-[100%] p-2 border border-green-900 outline-none rounded-xl h-10 md:w-[70%] lg:w-[50%]'/>
             </div>
             <center>
             <p className="text-red-500">{formErrors.fullname}</p>
             </center>
     
-            <p className='text-xl m-auto  w-[100%] mt-5  md:w-[50%]'>Email Address:</p>
+            <p className='text-xl m-auto  w-[100%] mt-5  md:w-[70%] lg:w-[50%]'>Email Address:</p>
             <div className='flex justify-center items-center mt-2  '>
               <input name='email'
               onChange={handleChange}
                type="text"
                value={formValues.email}
                placeholder='Enter Email Address'
-                className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
+                className='w-[100%] p-2  border border-green-900 outline-none rounded-xl h-10 md:w-[70%] lg:w-[50%]'/>
             </div>
             <center>
             <p className="text-red-500">{formErrors.email}</p>
@@ -89,7 +89,7 @@ const Contact = () => {
             <center className='mt-10'>
               <p className='text-xl font-bold text-green-900'>How can we help you?</p>
             </center>
-            <div className='flex justify-center items-center mt-10 bg-red-300 m-auto border border-bg-black drop-shadow-2xl md:w-[50%] '>
+            <div className='flex justify-center items-center mt-10 bg-red-300 m-auto border border-bg-black drop-shadow-2xl md:w-[70%] lg:w-[50%] '>
               <textarea name="text"
                onChange={handleChange}
                value={formValues.text}
@@ -102,7 +102,7 @@ const Contact = () => {
             </center>
   
             <center className='mt-5'>
-              <button type='submit' className='px-8 py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white text-xl '>Sign Up</button>
+              <button type='submit' className='px-8 py-1 md:py-2 mb-4 border outline-none bg-green-900 rounded-2xl text-white md:text-xl '>Sign Up</button>
             </center>
            
           
