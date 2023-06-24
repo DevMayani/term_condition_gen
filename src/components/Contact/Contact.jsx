@@ -89,7 +89,7 @@ const Contact = () => {
             <center className='mt-10'>
               <p className='text-xl font-bold text-green-900'>How can we help you?</p>
             </center>
-            <div className='flex justify-center items-center mt-10 bg-red-300 m-auto border border-bg-black drop-shadow-2xl md:w-[70%] lg:w-[50%] '>
+            <div className='flex justify-center items-center mt-10 m-auto border border-bg-black drop-shadow-2xl md:w-[70%] lg:w-[50%] '>
               <textarea name="text"
                onChange={handleChange}
                value={formValues.text}
