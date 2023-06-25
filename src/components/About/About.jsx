@@ -61,7 +61,7 @@ const About = () => {
      <div className='px-5 lg:px-10'>
       <div className='grid lg:grid-cols-2'>
         <div className='mt-10 '>
-          <p className='text-4xl font-semibold w-[70%]'>Who are we?</p>
+          <p className='text-2xl md:text-4xl font-semibold w-[70%]'>Who are we?</p>
           <p className='lg:w-[70%] text-sm md:text-lg lg:text-xl mt-5 md:mt-10'>{text}</p>
         </div>
         <div className=' mt-10'>
@@ -73,7 +73,7 @@ const About = () => {
         <img src={Four} alt="pic" className='w-[90%]' />
       </div>
       <div className='mt-20 '>
-          <p className='text-4xl font-semibold w-[70%'>Who do we do?</p>
+          <p className='text-2xl md:text-4xl font-semibold w-[70%'>Who do we do?</p>
           <p className='lg:w-[70%] text-sm md:text-lg lg:text-xl mt-5 md:mt-10'>{text}</p>
         </div>
       </div>
@@ -94,14 +94,14 @@ const About = () => {
             </div>
 
         </div>
-        <div className='gap-x-2 w-[100%] md:px-2 flex justify-center items-center md:gap-x-5'>
+        <div className='gap-x-2 w-[100%] px-3 md:px-2 grid grid-cols-3 md:gap-x-5'>
           {
             Comp.map((items) => (
-              <div className='flex justify-center items-start py-5 w-[30%] border bg-white rounded-xl'>
+              <div className=' py-5 border bg-white rounded-xl'>
               <div className='mt-2'>
               <img src={items.picOne} alt="pic" className='w-5 m-auto ' />
               <center className='mt-2'>
-              <p>{items.text}</p>
+              <p className='text-sm lg:text-lg'>{items.text}</p>
               </center>
                 <img src={items.picTwo} alt="pic" className='w-5 mt-3 m-auto' />
               </div>
